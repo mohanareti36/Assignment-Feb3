@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Mohanzensar" Class="EmplinqsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-83VT7HJE;Initial Catalog=Mohanzensar;Integrated Security=True" SettingsObjectName="LinqTOSql.Properties.Settings" SettingsPropertyName="MohanzensarConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Emp" Member="Emps">
+    <Type Name="Emp">
+      <Column Name="Empid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="sal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="deptno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="dept_Emp" Member="dept" ThisKey="deptno" OtherKey="deptid" Type="dept" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dept" Member="depts">
+    <Type Name="dept">
+      <Column Name="deptid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="deptname" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="dept_Emp" Member="Emps" ThisKey="deptid" OtherKey="deptno" Type="Emp" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_DelEmp" Method="sp_DelEmp">
+    <Parameter Name="empid" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_InsertEmp" Method="sp_InsertEmp">
+    <Parameter Name="ename" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="sal" Type="System.Double" DbType="Float" />
+    <Parameter Name="dno" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Sel" Method="sp_Sel">
+    <Parameter Name="empid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_SelResult">
+      <Column Name="Empid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="sal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="deptno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="deptname" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_UpdateEmp" Method="sp_UpdateEmp">
+    <Parameter Name="empid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ename" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="sal" Type="System.Double" DbType="Float" />
+    <Parameter Name="deptid" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_WOPara" Method="sp_WOPara">
+    <Parameter Name="empcnt" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

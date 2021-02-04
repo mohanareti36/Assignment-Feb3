@@ -1,0 +1,10 @@
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\bin\Debug\LinqTOSql.exe.config
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\bin\Debug\LinqTOSql.exe
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\bin\Debug\LinqTOSql.pdb
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\obj\Debug\LinqTOSql.csprojAssemblyReference.cache
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\obj\Debug\LinqTOSql.Form1.resources
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\obj\Debug\LinqTOSql.Properties.Resources.resources
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\obj\Debug\LinqTOSql.csproj.GenerateResource.cache
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\obj\Debug\LinqTOSql.csproj.CoreCompileInputs.cache
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\obj\Debug\LinqTOSql.exe
+C:\Dotnet2021\ConsoleAssig(hw)\Assignment feb3\LinqTOSql\LinqTOSql\obj\Debug\LinqTOSql.pdb
